@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Focus app - A productivity/content filtering application intended to block adult content and limit app usage time. Note: Full implementation requires native mobile OS capabilities beyond web app scope.",
+  "architectural_notes": [
+    "Content filtering and app usage restrictions require native mobile OS capabilities not available in web apps"
+  ],
+  "known_issues": [
+    "Device-level content filtering cannot be implemented in web applications - requires native iOS/Android development"
+  ],
+  "isFixRequest": false,
+  "existing_features": [],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Block 18+ and adult content websites",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Set time limits on apps (12-hour lockout feature)",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Focus",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

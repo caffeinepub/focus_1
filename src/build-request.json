@@ -1,0 +1,23 @@
+{
+  "kind": "build_request",
+  "title": "Platform limitation acknowledgment - Focus app requires native capabilities",
+  "projectName": "Focus",
+  "priority": "normal",
+  "requirements": [],
+  "constraints": [
+    "Web applications cannot implement device-level content filtering",
+    "Web applications cannot enforce app usage time limits at the system level",
+    "The requested features require native mobile OS capabilities (iOS/Android) with system-level permissions",
+    "Internet Computer web apps cannot access or control other applications or system-level networking"
+  ],
+  "nonGoals": [
+    "Block adult content at the device or network level",
+    "Restrict access to other mobile applications",
+    "Implement system-wide DNS or network filtering",
+    "Create native mobile app functionality"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

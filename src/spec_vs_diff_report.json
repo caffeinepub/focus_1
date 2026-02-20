@@ -1,0 +1,67 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-19T10:57:38.596Z",
+  "summary": "The implementation delivers a landing page for a native mobile app concept (Focus) that acknowledges platform limitations. However, the features section describes capabilities (content filtering, app time limits, system-level protection) that contradict the BuildRequest's explicit constraints and non-goals. The BuildRequest states these features require native mobile OS capabilities and cannot be implemented in web applications, yet the landing page markets them as if they will be delivered.",
+  "missing_requirements": [],
+  "hallucinated_features": [
+    {
+      "description": "Content filtering feature marketed as blocking inappropriate and adult content across all apps and browsers",
+      "reason": "BuildRequest constraints explicitly state 'Web applications cannot implement device-level content filtering' and non-goals include 'Block adult content at the device or network level'. The Features.tsx component describes this capability as if it will be delivered.",
+      "evidence": [
+        "frontend/src/components/Features.tsx"
+      ]
+    },
+    {
+      "description": "App time limits feature that locks apps for 12 hours when limits are reached",
+      "reason": "BuildRequest constraints state 'Web applications cannot enforce app usage time limits at the system level' and non-goals include 'Restrict access to other mobile applications'. Features.tsx markets this as a deliverable feature.",
+      "evidence": [
+        "frontend/src/components/Features.tsx"
+      ]
+    },
+    {
+      "description": "Tamper-proof system and secure protection claims",
+      "reason": "The Features.tsx 'Secure Protection' card claims settings cannot be bypassed, but BuildRequest acknowledges these require native OS capabilities with system-level permissions that are not being implemented.",
+      "evidence": [
+        "frontend/src/components/Features.tsx"
+      ]
+    },
+    {
+      "description": "Native mobile app with deep system integration",
+      "reason": "Features.tsx and HowItWorks.tsx describe downloading from App Store/Google Play and having deep system integration. BuildRequest non-goals explicitly state 'Create native mobile app functionality'.",
+      "evidence": [
+        "frontend/src/components/Features.tsx",
+        "frontend/src/components/HowItWorks.tsx"
+      ]
+    },
+    {
+      "description": "Family profiles with age-appropriate content filters",
+      "reason": "Features.tsx describes family profiles with content filtering capabilities, but BuildRequest constraints indicate content filtering cannot be implemented in web applications.",
+      "evidence": [
+        "frontend/src/components/Features.tsx"
+      ]
+    }
+  ],
+  "confidence": 0.95,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/components/Features.tsx",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/components/Hero.tsx",
+    "frontend/src/components/HowItWorks.tsx",
+    "frontend/src/components/WaitlistForm.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

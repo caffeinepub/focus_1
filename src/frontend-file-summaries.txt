@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that sets up theme provider, query client, and renders the complete landing page structure with header, hero, features, how-it-works, waitlist form, and footer sections.",
+  "frontend/src/components/Header.tsx": "Sticky header component with Focus branding, navigation links, and theme toggle button for light/dark mode switching.",
+  "frontend/src/components/Hero.tsx": "Hero section featuring the main headline, call-to-action buttons, and key statistics showcasing the Focus app's value proposition.",
+  "frontend/src/components/Features.tsx": "Features section displaying six key capabilities of the Focus app in a responsive card grid layout with icons and descriptions.",
+  "frontend/src/components/HowItWorks.tsx": "Step-by-step guide showing how users will use the Focus app, with an explanation of why native mobile development is required.",
+  "frontend/src/components/WaitlistForm.tsx": "Email collection form allowing users to join the waitlist for the Focus app launch with form validation and success notifications.",
+  "frontend/src/components/Footer.tsx": "Footer component with branding, navigation links, social media icons, and attribution including the required caffeine.ai link with UTM parameters.",
+  "frontend/src/index.css": "Global styles with OKLCH color system customized with a purple-focused color palette for both light and dark modes, featuring smooth scrolling.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, and extended design system for consistent styling throughout the app.",
+  "frontend/src/hooks/useQueries.ts": "Placeholder file for future React Query hooks when backend functionality is added."
+}

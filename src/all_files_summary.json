@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as a placeholder for future backend functionality.",
+  "feature_evidence.json": "Empty feature evidence report with no features currently documented.",
+  "frontend-file-summaries.txt": "JSON metadata containing summaries of all frontend component files, describing the Focus app landing page structure and styling.",
+  "frontend/index.css": "Tailwind CSS configuration with custom OKLCH color system defining light and dark theme variables for the entire application.",
+  "frontend/index.html": "HTML entry point that loads the React application via main.tsx into the root div.",
+  "frontend/src/App.tsx": "Root React component that wraps the application with QueryClient and ThemeProvider, rendering all landing page sections and the toast notification system.",
+  "frontend/src/components/Features.tsx": "Features section displaying six key capabilities (content filtering, time limits, security, native app, analytics, family profiles) in a responsive card grid.",
+  "frontend/src/components/Footer.tsx": "Footer component with branding, navigation links, social media icons, copyright notice, and required caffeine.ai attribution with UTM parameters.",
+  "frontend/src/components/Header.tsx": "Sticky header with Focus branding, navigation menu, and theme toggle button for switching between light and dark modes.",
+  "frontend/src/components/Hero.tsx": "Hero section with main headline, call-to-action buttons, and statistics showcasing the Focus app's value proposition.",
+  "frontend/src/components/HowItWorks.tsx": "Three-step guide explaining how to use Focus, with an explanation of why native mobile development is necessary for system-level integration.",
+  "frontend/src/components/WaitlistForm.tsx": "Email collection form with validation and simulated submission that allows users to join the waitlist with success toast notifications.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that manages the backend actor instance using React Query, creating authenticated or anonymous actors based on Internet Identity state and invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides Internet Identity authentication context and hooks for the application, managing login/logout state, identity persistence, and AuthClient lifecycle with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file for future backend query hooks; currently exports nothing as no backend functionality is implemented.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom CSS variables defining a comprehensive design system including light/dark themes, color tokens (using OKLCH color space), and base styles for the application.",
+  "frontend/src/main.tsx": "Application entry point that sets up the React root with QueryClientProvider for data fetching and InternetIdentityProvider for authentication, then renders the App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining custom theme extensions including OKLCH-based color system, container settings, border radius variables, custom animations, and typography/container query plugins.",
+  "project_state.json": "Project metadata indicating this is a Focus app for content filtering and app usage limits, with architectural notes highlighting that the requested features (blocking adult content, app time limits) require native mobile OS capabilities beyond web app scope."
+}
